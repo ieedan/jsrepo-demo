@@ -1,0 +1,38 @@
+[
+	{
+		"name": "utils",
+		"blocks": [
+			{
+				"name": "math",
+				"directory": "src/utils/math",
+				"category": "utils",
+				"tests": false,
+				"subdirectory": true,
+				"files": [
+					"add.ts",
+					"print-answer.ts"
+				],
+				"localDependencies": [
+					"utils/print"
+				],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "print",
+				"directory": "src/utils",
+				"category": "utils",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"print.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [
+					"chalk@^5.3.0"
+				],
+				"devDependencies": []
+			}
+		]
+	}
+]
